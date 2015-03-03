@@ -39,17 +39,13 @@
 -(void)mapWithObject:(id)object {
     
     NSDictionary *mapping = @{
-                              CoIdentifier: KZCall(stringFromNumber:, identifier),
+                              CoIdentifier: KZProperty(identifier),
                               CoImmediateNodes: KZProperty(immediateNodes),
                               CoLatitude: KZProperty(latitude),
                               CoLongitude: KZProperty(longitude),
                               };
     
     [KZPropertyMapper mapValuesFrom:object toInstance:self usingMapping:mapping];
-}
-
--(NSString*)stringFromNumber:(NSNumber*)number {
-    return [number stringValue];
 }
 
 
