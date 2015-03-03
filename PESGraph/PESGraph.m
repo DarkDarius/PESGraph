@@ -10,10 +10,43 @@
 #import "PESGraphEdge.h"
 #import "PESGraphNode.h"
 #import "PESGraphRoute.h"
+#import <MapKit/MapKit.h>
 
 @implementation PESGraph
 
 @synthesize nodes;
+
++(instancetype)graphWithJSONPath:(NSString*)jsonPath {
+    PESGraph *graph = [[PESGraph alloc] init];
+
+    //Retive data from local storage then parse it with NSJSONSerialization
+    NSData *jsonNodesData = [NSData dataWithContentsOfFile:jsonPath];
+    NSArray *nodeObjects = [NSJSONSerialization JSONObjectWithData:jsonNodesData options:NSJSONReadingAllowFragments error:nil];
+    
+    //Save all nodes to self.nodes
+    for (NSDictionary *nodeObject in nodeObjects) {
+        PESGraphNode *node = [PESGraphNode nodeWithObject:nodeObject];
+        [graph.nodes setObject:node forKey:node.identifier];
+    }
+    
+    //Connect all nodes by making edges
+    for (NSString *nodeIdentifier in graph.nodes) {
+        
+        PESGraphNode *node = graph.nodes[nodeIdentifier];
+        for (NSString *subnodeIdentifier in node.immediateNodes) {
+            
+            PESGraphNode *subNode = graph.nodes[subnodeIdentifier];
+            double distance = [graph distanceInMetersFrom:node toNode:subNode];
+            
+            NSString *edgeName = [NSString stringWithFormat:@"%@>%@", node.identifier, subNode.identifier];
+            PESGraphEdge *edge = [PESGraphEdge edgeWithName:edgeName andWeight:@(distance)];
+            
+            [graph addEdge:edge fromNode:node toNode:subNode];
+        }
+    }
+    
+    return graph;
+}
 
 - (id)init
 {
@@ -325,5 +358,11 @@
 #pragma mark -
 #pragma mark Memory Management
 
+-(double)distanceInMetersFrom:(PESGraphNode*)node toNode:(PESGraphNode*)subNode {
+    CLLocationCoordinate2D firstNodeCoordinate = CLLocationCoordinate2DMake(node.latitude, node.longitude);
+    CLLocationCoordinate2D secondNodeCoordinate = CLLocationCoordinate2DMake(subNode.latitude, subNode.longitude);
+    
+    return MKMetersBetweenMapPoints(MKMapPointForCoordinate(firstNodeCoordinate), MKMapPointForCoordinate(secondNodeCoordinate));
+}
 
 @end

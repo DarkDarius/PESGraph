@@ -6,6 +6,11 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import "PESGraphEdge.h"
+#import "PESGraphNode.h"
+#import "PESGraphRoute.h"
+#import "PESGraphRouteStep.h"
+
 #import <Foundation/Foundation.h>
 
 @class PESGraphEdge, PESGraphNode, PESGraphRoute;
@@ -29,6 +34,12 @@
      */
     NSMutableDictionary *nodes;
 }
+
+/**
+    Returns new graph object initiated with D'ark's json file.
+*/
++(instancetype)graphWithJSONPath:(NSString*)jsonPath;
+
 
 @property (nonatomic, strong) NSMutableDictionary *nodes;
 
