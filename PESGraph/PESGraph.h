@@ -30,7 +30,7 @@
     NSMutableDictionary *nodes;
 }
 
-@property (nonatomic, readonly) NSDictionary *nodes;
+@property (nonatomic, strong) NSMutableDictionary *nodes;
 
 /**
     Returns a count of the number of edges currently in the graph.  Bi-directional edges are counted
