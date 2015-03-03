@@ -30,6 +30,18 @@
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, strong) NSString *title;
 
+
+/**
+    Coordinate of Node
+ */
+@property (nonatomic)  double latitude;
+@property (nonatomic) double longitude;
+
+/**
+    Array of idenifiers of immediate nodes
+*/
+@property (nonatomic, strong) NSArray *immediateNodes;
+
 /**
 	Convenience method to return an initialized and un-retained node
 	@param anIdentifier a unique identifier for the node.  Must be unique for all nodes in a graph
