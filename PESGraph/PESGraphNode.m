@@ -12,7 +12,6 @@
 
 @synthesize identifier;
 @synthesize title;
-@synthesize additionalData;
 
 
 + (PESGraphNode *)nodeWithIdentifier:(NSString *)anIdentifier {

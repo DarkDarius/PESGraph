@@ -25,16 +25,10 @@
         An optional description of the node point.
      */
     NSString *title;
-
-    /**
-        Optional further key-value pairs describing the node
-     */
-    NSMutableDictionary *additionalData;
 }
 
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSMutableDictionary *additionalData;
 
 /**
 	Convenience method to return an initialized and un-retained node
