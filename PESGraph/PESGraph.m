@@ -103,9 +103,6 @@
 
 - (void)addEdge:(PESGraphEdge *)anEdge fromNode:(PESGraphNode *)aNode toNode:(PESGraphNode *)anotherNode
 {
-    [nodes setObject:aNode forKey:aNode.identifier];
-    [nodes setObject:anotherNode forKey:anotherNode.identifier];
-
     // If we don't have any edges leaving from from the given node (aNode),
     // create a new record in the node dictionary.  Otherwise just add the new edge / connection to the
     // collection
