@@ -23,6 +23,10 @@
     return aNode;
 }
 
++ (PESGraphNode *)nodeWithObject:(id)object {
+    
+}
+
 
 
 @end

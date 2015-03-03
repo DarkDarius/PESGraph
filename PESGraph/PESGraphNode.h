@@ -49,4 +49,6 @@
  */
 + (PESGraphNode *)nodeWithIdentifier:(NSString *)anIdentifier;
 
++ (PESGraphNode *)nodeWithObject:(id)object;
+
 @end
