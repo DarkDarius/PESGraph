@@ -20,15 +20,9 @@
         nodes in the graph
      */
     NSString *identifier;
-
-    /**
-        An optional description of the node point.
-     */
-    NSString *title;
 }
 
 @property (nonatomic, strong) NSString *identifier;
-@property (nonatomic, strong) NSString *title;
 
 
 /**
