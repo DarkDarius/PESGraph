@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.framework    = 'Foundation'
 
   s.requires_arc = true
+  s.dependency 'KZPropertyMapper'
 end

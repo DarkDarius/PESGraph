@@ -1,448 +1,1117 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		F30497911406118A008EBBB4 /* PESGraphRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = F304978F1406118A008EBBB4 /* PESGraphRoute.h */; };
-		F30497921406118A008EBBB4 /* PESGraphRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = F30497901406118A008EBBB4 /* PESGraphRoute.m */; };
-		F304979614061A9D008EBBB4 /* PESGraphRouteStep.h in Headers */ = {isa = PBXBuildFile; fileRef = F304979414061A9D008EBBB4 /* PESGraphRouteStep.h */; };
-		F304979714061A9D008EBBB4 /* PESGraphRouteStep.m in Sources */ = {isa = PBXBuildFile; fileRef = F304979514061A9D008EBBB4 /* PESGraphRouteStep.m */; };
-		F3C9E4A21400C6220097ACA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C9E4A11400C6220097ACA1 /* Foundation.framework */; };
-		F3C9E4A81400C6220097ACA1 /* PESGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C9E4A71400C6220097ACA1 /* PESGraph.m */; };
-		F3C9E4B21400C6220097ACA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C9E4B11400C6220097ACA1 /* UIKit.framework */; };
-		F3C9E4B31400C6220097ACA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C9E4A11400C6220097ACA1 /* Foundation.framework */; };
-		F3C9E4B51400C6220097ACA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C9E4B41400C6220097ACA1 /* CoreGraphics.framework */; };
-		F3C9E4B81400C6220097ACA1 /* libPESGraph.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C9E49E1400C6220097ACA1 /* libPESGraph.a */; };
-		F3C9E4BE1400C6220097ACA1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3C9E4BC1400C6220097ACA1 /* InfoPlist.strings */; };
-		F3C9E4C01400C6220097ACA1 /* PESGraphTests.h in Resources */ = {isa = PBXBuildFile; fileRef = F3C9E4BF1400C6220097ACA1 /* PESGraphTests.h */; };
-		F3C9E4C21400C6220097ACA1 /* PESGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C9E4C11400C6220097ACA1 /* PESGraphTests.m */; };
-		F3C9E4D51400CFAF0097ACA1 /* PESGraphNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C9E4D31400CFAF0097ACA1 /* PESGraphNode.h */; };
-		F3C9E4D61400CFAF0097ACA1 /* PESGraphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C9E4D41400CFAF0097ACA1 /* PESGraphNode.m */; };
-		F3C9E4D91400D07E0097ACA1 /* PESGraphEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C9E4D71400D07E0097ACA1 /* PESGraphEdge.h */; };
-		F3C9E4DA1400D07E0097ACA1 /* PESGraphEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C9E4D81400D07E0097ACA1 /* PESGraphEdge.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F3C9E4B61400C6220097ACA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3C9E4951400C6220097ACA1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3C9E49D1400C6220097ACA1;
-			remoteInfo = PESGraph;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		F304978F1406118A008EBBB4 /* PESGraphRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphRoute.h; sourceTree = "<group>"; };
-		F30497901406118A008EBBB4 /* PESGraphRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphRoute.m; sourceTree = "<group>"; };
-		F304979414061A9D008EBBB4 /* PESGraphRouteStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphRouteStep.h; sourceTree = "<group>"; };
-		F304979514061A9D008EBBB4 /* PESGraphRouteStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphRouteStep.m; sourceTree = "<group>"; };
-		F3C9E49E1400C6220097ACA1 /* libPESGraph.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPESGraph.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3C9E4A11400C6220097ACA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F3C9E4A51400C6220097ACA1 /* PESGraph-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PESGraph-Prefix.pch"; sourceTree = "<group>"; };
-		F3C9E4A61400C6220097ACA1 /* PESGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PESGraph.h; sourceTree = "<group>"; };
-		F3C9E4A71400C6220097ACA1 /* PESGraph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PESGraph.m; sourceTree = "<group>"; };
-		F3C9E4AE1400C6220097ACA1 /* PESGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PESGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3C9E4B11400C6220097ACA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F3C9E4B41400C6220097ACA1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		F3C9E4BB1400C6220097ACA1 /* PESGraphTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PESGraphTests-Info.plist"; sourceTree = "<group>"; };
-		F3C9E4BD1400C6220097ACA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F3C9E4BF1400C6220097ACA1 /* PESGraphTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PESGraphTests.h; sourceTree = "<group>"; };
-		F3C9E4C11400C6220097ACA1 /* PESGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PESGraphTests.m; sourceTree = "<group>"; };
-		F3C9E4D31400CFAF0097ACA1 /* PESGraphNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphNode.h; sourceTree = "<group>"; };
-		F3C9E4D41400CFAF0097ACA1 /* PESGraphNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphNode.m; sourceTree = "<group>"; };
-		F3C9E4D71400D07E0097ACA1 /* PESGraphEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESGraphEdge.h; sourceTree = "<group>"; };
-		F3C9E4D81400D07E0097ACA1 /* PESGraphEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PESGraphEdge.m; sourceTree = "<group>"; };
-		F3F3B6DA140DFAF800DDE459 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		F3F3B6DC140DFD0400DDE459 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		F3F3B6DD140DFD7A00DDE459 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		F3C9E49B1400C6220097ACA1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3C9E4A21400C6220097ACA1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3C9E4AA1400C6220097ACA1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3C9E4B21400C6220097ACA1 /* UIKit.framework in Frameworks */,
-				F3C9E4B31400C6220097ACA1 /* Foundation.framework in Frameworks */,
-				F3C9E4B51400C6220097ACA1 /* CoreGraphics.framework in Frameworks */,
-				F3C9E4B81400C6220097ACA1 /* libPESGraph.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		F3C9E4931400C6220097ACA1 = {
-			isa = PBXGroup;
-			children = (
-				F3F3B6DD140DFD7A00DDE459 /* CHANGELOG.txt */,
-				F3F3B6DA140DFAF800DDE459 /* LICENSE.txt */,
-				F3F3B6DC140DFD0400DDE459 /* README.txt */,
-				F3C9E4A31400C6220097ACA1 /* PESGraph */,
-				F3C9E4B91400C6220097ACA1 /* PESGraphTests */,
-				F3C9E4A01400C6220097ACA1 /* Frameworks */,
-				F3C9E49F1400C6220097ACA1 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		F3C9E49F1400C6220097ACA1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F3C9E49E1400C6220097ACA1 /* libPESGraph.a */,
-				F3C9E4AE1400C6220097ACA1 /* PESGraphTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F3C9E4A01400C6220097ACA1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F3C9E4A11400C6220097ACA1 /* Foundation.framework */,
-				F3C9E4B11400C6220097ACA1 /* UIKit.framework */,
-				F3C9E4B41400C6220097ACA1 /* CoreGraphics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F3C9E4A31400C6220097ACA1 /* PESGraph */ = {
-			isa = PBXGroup;
-			children = (
-				F3C9E4A61400C6220097ACA1 /* PESGraph.h */,
-				F3C9E4A71400C6220097ACA1 /* PESGraph.m */,
-				F3C9E4D31400CFAF0097ACA1 /* PESGraphNode.h */,
-				F3C9E4D41400CFAF0097ACA1 /* PESGraphNode.m */,
-				F3C9E4D71400D07E0097ACA1 /* PESGraphEdge.h */,
-				F3C9E4D81400D07E0097ACA1 /* PESGraphEdge.m */,
-				F304978F1406118A008EBBB4 /* PESGraphRoute.h */,
-				F30497901406118A008EBBB4 /* PESGraphRoute.m */,
-				F304979414061A9D008EBBB4 /* PESGraphRouteStep.h */,
-				F304979514061A9D008EBBB4 /* PESGraphRouteStep.m */,
-				F3C9E4A41400C6220097ACA1 /* Supporting Files */,
-			);
-			path = PESGraph;
-			sourceTree = "<group>";
-		};
-		F3C9E4A41400C6220097ACA1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F3C9E4A51400C6220097ACA1 /* PESGraph-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F3C9E4B91400C6220097ACA1 /* PESGraphTests */ = {
-			isa = PBXGroup;
-			children = (
-				F3C9E4BF1400C6220097ACA1 /* PESGraphTests.h */,
-				F3C9E4C11400C6220097ACA1 /* PESGraphTests.m */,
-				F3C9E4BA1400C6220097ACA1 /* Supporting Files */,
-			);
-			path = PESGraphTests;
-			sourceTree = "<group>";
-		};
-		F3C9E4BA1400C6220097ACA1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F3C9E4BB1400C6220097ACA1 /* PESGraphTests-Info.plist */,
-				F3C9E4BC1400C6220097ACA1 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		F3C9E49C1400C6220097ACA1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3C9E4D51400CFAF0097ACA1 /* PESGraphNode.h in Headers */,
-				F3C9E4D91400D07E0097ACA1 /* PESGraphEdge.h in Headers */,
-				F30497911406118A008EBBB4 /* PESGraphRoute.h in Headers */,
-				F304979614061A9D008EBBB4 /* PESGraphRouteStep.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		F3C9E49D1400C6220097ACA1 /* PESGraph */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3C9E4C51400C6220097ACA1 /* Build configuration list for PBXNativeTarget "PESGraph" */;
-			buildPhases = (
-				F3C9E49A1400C6220097ACA1 /* Sources */,
-				F3C9E49B1400C6220097ACA1 /* Frameworks */,
-				F3C9E49C1400C6220097ACA1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PESGraph;
-			productName = PESGraph;
-			productReference = F3C9E49E1400C6220097ACA1 /* libPESGraph.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F3C9E4AD1400C6220097ACA1 /* PESGraphTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3C9E4C81400C6220097ACA1 /* Build configuration list for PBXNativeTarget "PESGraphTests" */;
-			buildPhases = (
-				F3C9E4A91400C6220097ACA1 /* Sources */,
-				F3C9E4AA1400C6220097ACA1 /* Frameworks */,
-				F3C9E4AB1400C6220097ACA1 /* Resources */,
-				F3C9E4AC1400C6220097ACA1 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3C9E4B71400C6220097ACA1 /* PBXTargetDependency */,
-			);
-			name = PESGraphTests;
-			productName = PESGraphTests;
-			productReference = F3C9E4AE1400C6220097ACA1 /* PESGraphTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		F3C9E4951400C6220097ACA1 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0510;
-			};
-			buildConfigurationList = F3C9E4981400C6220097ACA1 /* Build configuration list for PBXProject "PESGraph" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = F3C9E4931400C6220097ACA1;
-			productRefGroup = F3C9E49F1400C6220097ACA1 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				F3C9E49D1400C6220097ACA1 /* PESGraph */,
-				F3C9E4AD1400C6220097ACA1 /* PESGraphTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		F3C9E4AB1400C6220097ACA1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3C9E4BE1400C6220097ACA1 /* InfoPlist.strings in Resources */,
-				F3C9E4C01400C6220097ACA1 /* PESGraphTests.h in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		F3C9E4AC1400C6220097ACA1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		F3C9E49A1400C6220097ACA1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3C9E4A81400C6220097ACA1 /* PESGraph.m in Sources */,
-				F3C9E4D61400CFAF0097ACA1 /* PESGraphNode.m in Sources */,
-				F3C9E4DA1400D07E0097ACA1 /* PESGraphEdge.m in Sources */,
-				F30497921406118A008EBBB4 /* PESGraphRoute.m in Sources */,
-				F304979714061A9D008EBBB4 /* PESGraphRouteStep.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3C9E4A91400C6220097ACA1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3C9E4C21400C6220097ACA1 /* PESGraphTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F3C9E4B71400C6220097ACA1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3C9E49D1400C6220097ACA1 /* PESGraph */;
-			targetProxy = F3C9E4B61400C6220097ACA1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F3C9E4BC1400C6220097ACA1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3C9E4BD1400C6220097ACA1 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		F3C9E4C31400C6220097ACA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		F3C9E4C41400C6220097ACA1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F3C9E4C61400C6220097ACA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				DSTROOT = /tmp/PESGraph.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PESGraph/PESGraph-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F3C9E4C71400C6220097ACA1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				DSTROOT = /tmp/PESGraph.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PESGraph/PESGraph-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		F3C9E4C91400C6220097ACA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PESGraph/PESGraph-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "PESGraphTests/PESGraphTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		F3C9E4CA1400C6220097ACA1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PESGraph/PESGraph-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "PESGraphTests/PESGraphTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		F3C9E4981400C6220097ACA1 /* Build configuration list for PBXProject "PESGraph" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3C9E4C31400C6220097ACA1 /* Debug */,
-				F3C9E4C41400C6220097ACA1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3C9E4C51400C6220097ACA1 /* Build configuration list for PBXNativeTarget "PESGraph" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3C9E4C61400C6220097ACA1 /* Debug */,
-				F3C9E4C71400C6220097ACA1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3C9E4C81400C6220097ACA1 /* Build configuration list for PBXNativeTarget "PESGraphTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3C9E4C91400C6220097ACA1 /* Debug */,
-				F3C9E4CA1400C6220097ACA1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = F3C9E4951400C6220097ACA1 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>46C991DBDF03F889B510DC4B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>633043414F3BA7D66703689D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E22200FE1DE849C1A2FA6E62</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6C53A37AE071DD3056645B90</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8028B5C5F3038FE64D1B90F0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6C53A37AE071DD3056645B90</string>
+				<string>46C991DBDF03F889B510DC4B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CDF0640435784AB4CB16BCD6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E22200FE1DE849C1A2FA6E62</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E69E0313994DFA53D7D2DB25</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F304978F1406118A008EBBB4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PESGraphRoute.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F30497901406118A008EBBB4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PESGraphRoute.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F30497911406118A008EBBB4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F304978F1406118A008EBBB4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F30497921406118A008EBBB4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F30497901406118A008EBBB4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F304979414061A9D008EBBB4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PESGraphRouteStep.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F304979514061A9D008EBBB4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PESGraphRouteStep.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F304979614061A9D008EBBB4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F304979414061A9D008EBBB4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F304979714061A9D008EBBB4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F304979514061A9D008EBBB4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4931400C6220097ACA1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F3F3B6DD140DFD7A00DDE459</string>
+				<string>F3F3B6DA140DFAF800DDE459</string>
+				<string>F3F3B6DC140DFD0400DDE459</string>
+				<string>F3C9E4A31400C6220097ACA1</string>
+				<string>F3C9E4B91400C6220097ACA1</string>
+				<string>F3C9E4A01400C6220097ACA1</string>
+				<string>F3C9E49F1400C6220097ACA1</string>
+				<string>8028B5C5F3038FE64D1B90F0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4951400C6220097ACA1</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastTestingUpgradeCheck</key>
+				<string>0510</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>F3C9E4981400C6220097ACA1</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>F3C9E4931400C6220097ACA1</string>
+			<key>productRefGroup</key>
+			<string>F3C9E49F1400C6220097ACA1</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>F3C9E49D1400C6220097ACA1</string>
+				<string>F3C9E4AD1400C6220097ACA1</string>
+			</array>
+		</dict>
+		<key>F3C9E4981400C6220097ACA1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F3C9E4C31400C6220097ACA1</string>
+				<string>F3C9E4C41400C6220097ACA1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F3C9E49A1400C6220097ACA1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F3C9E4A81400C6220097ACA1</string>
+				<string>F3C9E4D61400CFAF0097ACA1</string>
+				<string>F3C9E4DA1400D07E0097ACA1</string>
+				<string>F30497921406118A008EBBB4</string>
+				<string>F304979714061A9D008EBBB4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F3C9E49B1400C6220097ACA1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F3C9E4A21400C6220097ACA1</string>
+				<string>633043414F3BA7D66703689D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F3C9E49C1400C6220097ACA1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F3C9E4D51400CFAF0097ACA1</string>
+				<string>F3C9E4D91400D07E0097ACA1</string>
+				<string>F30497911406118A008EBBB4</string>
+				<string>F304979614061A9D008EBBB4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F3C9E49D1400C6220097ACA1</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F3C9E4C51400C6220097ACA1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CDF0640435784AB4CB16BCD6</string>
+				<string>F3C9E49A1400C6220097ACA1</string>
+				<string>F3C9E49B1400C6220097ACA1</string>
+				<string>F3C9E49C1400C6220097ACA1</string>
+				<string>E69E0313994DFA53D7D2DB25</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PESGraph</string>
+			<key>productName</key>
+			<string>PESGraph</string>
+			<key>productReference</key>
+			<string>F3C9E49E1400C6220097ACA1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>F3C9E49E1400C6220097ACA1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPESGraph.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F3C9E49F1400C6220097ACA1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F3C9E49E1400C6220097ACA1</string>
+				<string>F3C9E4AE1400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4A01400C6220097ACA1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F3C9E4A11400C6220097ACA1</string>
+				<string>F3C9E4B11400C6220097ACA1</string>
+				<string>F3C9E4B41400C6220097ACA1</string>
+				<string>E22200FE1DE849C1A2FA6E62</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4A11400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F3C9E4A21400C6220097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4A11400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4A31400C6220097ACA1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F3C9E4A61400C6220097ACA1</string>
+				<string>F3C9E4A71400C6220097ACA1</string>
+				<string>F3C9E4D31400CFAF0097ACA1</string>
+				<string>F3C9E4D41400CFAF0097ACA1</string>
+				<string>F3C9E4D71400D07E0097ACA1</string>
+				<string>F3C9E4D81400D07E0097ACA1</string>
+				<string>F304978F1406118A008EBBB4</string>
+				<string>F30497901406118A008EBBB4</string>
+				<string>F304979414061A9D008EBBB4</string>
+				<string>F304979514061A9D008EBBB4</string>
+				<string>F3C9E4A41400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>PESGraph</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4A41400C6220097ACA1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F3C9E4A51400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4A51400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PESGraph-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4A61400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PESGraph.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4A71400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PESGraph.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4A81400C6220097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4A71400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4A91400C6220097ACA1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F3C9E4C21400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F3C9E4AA1400C6220097ACA1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F3C9E4B21400C6220097ACA1</string>
+				<string>F3C9E4B31400C6220097ACA1</string>
+				<string>F3C9E4B51400C6220097ACA1</string>
+				<string>F3C9E4B81400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F3C9E4AB1400C6220097ACA1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F3C9E4BE1400C6220097ACA1</string>
+				<string>F3C9E4C01400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F3C9E4AC1400C6220097ACA1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string># Run the unit tests in this test bundle.
+"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+</string>
+		</dict>
+		<key>F3C9E4AD1400C6220097ACA1</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F3C9E4C81400C6220097ACA1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F3C9E4A91400C6220097ACA1</string>
+				<string>F3C9E4AA1400C6220097ACA1</string>
+				<string>F3C9E4AB1400C6220097ACA1</string>
+				<string>F3C9E4AC1400C6220097ACA1</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>F3C9E4B71400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PESGraphTests</string>
+			<key>productName</key>
+			<string>PESGraphTests</string>
+			<key>productReference</key>
+			<string>F3C9E4AE1400C6220097ACA1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>F3C9E4AE1400C6220097ACA1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PESGraphTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F3C9E4B11400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>F3C9E4B21400C6220097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4B11400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4B31400C6220097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4A11400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4B41400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>F3C9E4B51400C6220097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4B41400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4B61400C6220097ACA1</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>F3C9E4951400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F3C9E49D1400C6220097ACA1</string>
+			<key>remoteInfo</key>
+			<string>PESGraph</string>
+		</dict>
+		<key>F3C9E4B71400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>F3C9E49D1400C6220097ACA1</string>
+			<key>targetProxy</key>
+			<string>F3C9E4B61400C6220097ACA1</string>
+		</dict>
+		<key>F3C9E4B81400C6220097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E49E1400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4B91400C6220097ACA1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F3C9E4BF1400C6220097ACA1</string>
+				<string>F3C9E4C11400C6220097ACA1</string>
+				<string>F3C9E4BA1400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>PESGraphTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4BA1400C6220097ACA1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F3C9E4BB1400C6220097ACA1</string>
+				<string>F3C9E4BC1400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4BB1400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>PESGraphTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4BC1400C6220097ACA1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F3C9E4BD1400C6220097ACA1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4BD1400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4BE1400C6220097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4BC1400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4BF1400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PESGraphTests.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4C01400C6220097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4BF1400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4C11400C6220097ACA1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PESGraphTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4C21400C6220097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4C11400C6220097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4C31400C6220097ACA1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvmgcc42</string>
+				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F3C9E4C41400C6220097ACA1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvmgcc42</string>
+				<key>GCC_WARN_ABOUT_MISSING_PROTOTYPES</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F3C9E4C51400C6220097ACA1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F3C9E4C61400C6220097ACA1</string>
+				<string>F3C9E4C71400C6220097ACA1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F3C9E4C61400C6220097ACA1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6C53A37AE071DD3056645B90</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/PESGraph.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PESGraph/PESGraph-Prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F3C9E4C71400C6220097ACA1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>46C991DBDF03F889B510DC4B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/PESGraph.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PESGraph/PESGraph-Prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F3C9E4C81400C6220097ACA1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F3C9E4C91400C6220097ACA1</string>
+				<string>F3C9E4CA1400C6220097ACA1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F3C9E4C91400C6220097ACA1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PESGraph/PESGraph-Prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INFOPLIST_FILE</key>
+				<string>PESGraphTests/PESGraphTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F3C9E4CA1400C6220097ACA1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PESGraph/PESGraph-Prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INFOPLIST_FILE</key>
+				<string>PESGraphTests/PESGraphTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F3C9E4D31400CFAF0097ACA1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PESGraphNode.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4D41400CFAF0097ACA1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PESGraphNode.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4D51400CFAF0097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4D31400CFAF0097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4D61400CFAF0097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4D41400CFAF0097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4D71400D07E0097ACA1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PESGraphEdge.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4D81400D07E0097ACA1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PESGraphEdge.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3C9E4D91400D07E0097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4D71400D07E0097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3C9E4DA1400D07E0097ACA1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F3C9E4D81400D07E0097ACA1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3F3B6DA140DFAF800DDE459</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>LICENSE.txt</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3F3B6DC140DFD0400DDE459</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>README.txt</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3F3B6DD140DFD7A00DDE459</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>CHANGELOG.txt</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>F3C9E4951400C6220097ACA1</string>
+</dict>
+</plist>
