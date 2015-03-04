@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/snyderp/PESGraph.git", :tag => "v0.2.1" }
   s.source_files = 'PESGraph', 'PESGraph/*.{h,m}'
-  s.framework    = 'Foundation'
+  s.frameworks    = 'Foundation', 'MapKit'
 
   s.requires_arc = true
   s.dependency 'KZPropertyMapper'
