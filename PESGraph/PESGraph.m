@@ -362,7 +362,33 @@
     CLLocationCoordinate2D firstNodeCoordinate = CLLocationCoordinate2DMake(node.latitude, node.longitude);
     CLLocationCoordinate2D secondNodeCoordinate = CLLocationCoordinate2DMake(subNode.latitude, subNode.longitude);
     
-    return MKMetersBetweenMapPoints(MKMapPointForCoordinate(firstNodeCoordinate), MKMapPointForCoordinate(secondNodeCoordinate));
+    return [self distanceBetween:firstNodeCoordinate and:secondNodeCoordinate];
+}
+
+-(double)distanceBetween:(CLLocationCoordinate2D)coordinate and:(CLLocationCoordinate2D)coordinate2 {
+    return MKMetersBetweenMapPoints(MKMapPointForCoordinate(coordinate), MKMapPointForCoordinate(coordinate2));
+}
+
+-(PESGraphNode *)closestNodeToLatitude:(double)latitude andLongitude:(double)longitude {
+    CLLocationCoordinate2D targetCoordinate = CLLocationCoordinate2DMake(latitude, longitude);
+    PESGraphNode *targetNode = nil;
+    
+    double theShortestDistance = DBL_MAX;
+    
+    for (NSString *nodeIdentifier in self.nodes) {
+        PESGraphNode *node = self.nodes[nodeIdentifier];
+        CLLocationCoordinate2D nodeCoordinate = CLLocationCoordinate2DMake(node.latitude, node.longitude);
+        
+        double currentDistance = [self distanceBetween:targetCoordinate and:nodeCoordinate];
+        
+        if (currentDistance < theShortestDistance) {
+            theShortestDistance = currentDistance;
+            targetNode = node;
+            
+        }
+    }
+    
+    return targetNode;
 }
 
 @end

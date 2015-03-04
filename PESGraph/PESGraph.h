@@ -140,6 +140,10 @@
  */
 - (PESGraphRoute *)shortestRouteFromNode:(PESGraphNode *)startNode toNode:(PESGraphNode *)endNode;
 
+/**
+    Reutrns closed node to given geo-coordinates
+ */
+-(PESGraphNode *)closestNodeToLatitude:(double)latitude andLongitude:(double)longitude;
 
 #pragma mark -
 #pragma mark "Private" methods
