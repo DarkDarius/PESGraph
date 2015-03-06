@@ -145,6 +145,9 @@
  */
 -(PESGraphNode *)closestNodeToLatitude:(double)latitude andLongitude:(double)longitude;
 
+
+-(NSArray*)shortestRouteFromLat:(double)lat lng:(double)lng toLat:(double)toLat lng:(double)toLng withDistance:(NSInteger*)distance;
+
 #pragma mark -
 #pragma mark "Private" methods
 
