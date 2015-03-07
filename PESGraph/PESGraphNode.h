@@ -32,6 +32,11 @@
 @property (nonatomic) double longitude;
 
 /**
+    Floor identifier of node
+*/
+@property (nonatomic, strong) NSString *floorID;
+
+/**
     Array of idenifiers of immediate nodes
 */
 @property (nonatomic, strong) NSArray *immediateNodes;

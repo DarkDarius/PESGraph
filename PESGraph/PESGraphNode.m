@@ -13,6 +13,7 @@
 #define CoImmediateNodes @"imm"
 #define CoLatitude @"lat"
 #define CoLongitude @"lng"
+#define CoFloorID @"fid"
 
 @implementation PESGraphNode
 
@@ -43,6 +44,7 @@
                               CoImmediateNodes: KZProperty(immediateNodes),
                               CoLatitude: KZProperty(latitude),
                               CoLongitude: KZProperty(longitude),
+                              CoFloorID: KZProperty(floorID)
                               };
     
     [KZPropertyMapper mapValuesFrom:object toInstance:self usingMapping:mapping];

@@ -393,7 +393,7 @@
 
 -(NSArray*)shortestRouteFromLat:(double)lat lng:(double)lng toLat:(double)toLat lng:(double)toLng withDistance:(NSInteger*)distance {
     NSMutableArray *locations = [NSMutableArray array];
-    
+
     
     //Retrive stratPoint and endPoint nodes.
     PESGraphNode *firstNode = [self closestNodeToLatitude:lat andLongitude:lng];
