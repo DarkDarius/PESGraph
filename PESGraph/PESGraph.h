@@ -13,8 +13,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class PESGraphEdge, PESGraphNode, PESGraphRoute;
-
 /**
 	Class that depicts a set of nodes and the relationship between then (edges).  Also
     allows for calculating the quickest distance between two points in the graph
@@ -143,10 +141,7 @@
 /**
     Reutrns closed node to given geo-coordinates
  */
--(PESGraphNode *)closestNodeToLatitude:(double)latitude andLongitude:(double)longitude;
-
-
--(NSArray*)shortestRouteFromLat:(double)lat lng:(double)lng toLat:(double)toLat lng:(double)toLng withDistance:(NSInteger*)distance;
+-(PESGraphNode *)closestNodeToLatitude:(double)latitude andLongitude:(double)longitude floorID:(NSString*)floorID;
 
 #pragma mark -
 #pragma mark "Private" methods

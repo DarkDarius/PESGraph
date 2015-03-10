@@ -369,7 +369,7 @@
     return MKMetersBetweenMapPoints(MKMapPointForCoordinate(coordinate), MKMapPointForCoordinate(coordinate2));
 }
 
--(PESGraphNode *)closestNodeToLatitude:(double)latitude andLongitude:(double)longitude {
+-(PESGraphNode *)closestNodeToLatitude:(double)latitude andLongitude:(double)longitude floorID:(NSString*)floorID {
     CLLocationCoordinate2D targetCoordinate = CLLocationCoordinate2DMake(latitude, longitude);
     PESGraphNode *targetNode = nil;
     
@@ -377,6 +377,10 @@
     
     for (NSString *nodeIdentifier in self.nodes) {
         PESGraphNode *node = self.nodes[nodeIdentifier];
+        
+        if (![node.floorID isEqualToString:floorID])
+            continue;
+        
         CLLocationCoordinate2D nodeCoordinate = CLLocationCoordinate2DMake(node.latitude, node.longitude);
         
         double currentDistance = [self distanceBetween:targetCoordinate and:nodeCoordinate];
@@ -384,39 +388,10 @@
         if (currentDistance < theShortestDistance) {
             theShortestDistance = currentDistance;
             targetNode = node;
-            
         }
     }
     
     return targetNode;
-}
-
--(NSArray*)shortestRouteFromLat:(double)lat lng:(double)lng toLat:(double)toLat lng:(double)toLng withDistance:(NSInteger*)distance {
-    NSMutableArray *locations = [NSMutableArray array];
-
-    
-    //Retrive stratPoint and endPoint nodes.
-    PESGraphNode *firstNode = [self closestNodeToLatitude:lat andLongitude:lng];
-    PESGraphNode *lastNode = [self closestNodeToLatitude:toLat andLongitude:toLng];
-
-    PESGraphRoute * route = [self shortestRouteFromNode:firstNode toNode:lastNode];
-    CLLocation *firstLocation = [[CLLocation alloc] initWithLatitude:lat longitude:lng];
-    CLLocation *lastLocation = [[CLLocation alloc] initWithLatitude:toLat longitude:toLng];
-    
-    [locations addObject:firstLocation];
-    
-    for (long idx = 1; idx < route.steps.count - 1; idx++) {
-        PESGraphRouteStep *step = route.steps[idx];
-        CLLocation *location = [[CLLocation alloc] initWithLatitude:step.node.latitude longitude:step.node.longitude];
-        
-        [locations addObject:location];
-        *distance += step.edge.weight.integerValue;
-    }
-    
-    [locations addObject:lastLocation];
-    
-    
-    return locations;
 }
 
 @end
