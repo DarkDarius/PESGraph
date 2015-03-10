@@ -50,4 +50,6 @@
 
 + (PESGraphNode *)nodeWithObject:(id)object;
 
++ (instancetype)nodeWithIdentifier:(NSString*)identifier lat:(double)lat lng:(double)lng floor:(NSString*)floorID immidiates:(NSArray*)immidiateNodes;
+
 @end

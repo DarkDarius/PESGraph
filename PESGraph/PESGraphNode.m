@@ -37,6 +37,18 @@
     return node;
 }
 
++ (instancetype)nodeWithIdentifier:(NSString*)identifier lat:(double)lat lng:(double)lng floor:(NSString*)floorID immidiates:(NSArray*)immidiateNodes {
+    PESGraphNode *node = [[PESGraphNode alloc] init];
+    
+    node.identifier = identifier;
+    node.latitude = lat;
+    node.longitude = lng;
+    node.floorID = floorID;
+    node.immediateNodes = immidiateNodes;
+    
+    return node;
+}
+
 -(void)mapWithObject:(id)object {
     
     NSDictionary *mapping = @{
