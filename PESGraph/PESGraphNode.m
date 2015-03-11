@@ -8,6 +8,7 @@
 
 #import "PESGraphNode.h"
 #import <KZPropertyMapper/KZPropertyMapper.h>
+#import <CoreLocation/CLLocation.h>
 
 #define CoIdentifier @"id"
 #define CoImmediateNodes @"imm"
@@ -62,6 +63,9 @@
     [KZPropertyMapper mapValuesFrom:object toInstance:self usingMapping:mapping];
 }
 
+-(CLLocation*)location {
+    return [[CLLocation alloc] initWithLatitude:self.latitude longitude:self.longitude];
+}
 
 
 @end

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class CLLocation;
+
 /**
 	Represents a single node in a graph.  Each node must have a unique, string identifier in the graph (used
     internally for dictionary look ups).  Each node can also optionally have a title and a dictionary for
@@ -40,6 +42,11 @@
     Array of idenifiers of immediate nodes
 */
 @property (nonatomic, strong) NSArray *immediateNodes;
+
+/**
+    Converts latitude and longitude to CLLocaton object
+*/
+-(CLLocation*)location;
 
 /**
 	Convenience method to return an initialized and un-retained node
