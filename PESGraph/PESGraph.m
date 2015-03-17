@@ -21,6 +21,11 @@
 
     //Retive data from local storage then parse it with NSJSONSerialization
     NSData *jsonNodesData = [NSData dataWithContentsOfFile:jsonPath];
+    
+    if (jsonNodesData == nil)
+        return graph;
+    
+    
     NSArray *nodeObjects = [NSJSONSerialization JSONObjectWithData:jsonNodesData options:NSJSONReadingAllowFragments error:nil];
     
     //Save all nodes to self.nodes
