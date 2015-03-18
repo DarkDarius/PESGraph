@@ -43,6 +43,9 @@
 */
 @property (nonatomic, strong) NSArray *immediateNodes;
 
+
+@property (nonatomic) BOOL isInternal;
+
 /**
     Converts latitude and longitude to CLLocaton object
 */

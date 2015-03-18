@@ -15,10 +15,21 @@
 #define CoLatitude @"lat"
 #define CoLongitude @"lng"
 #define CoFloorID @"fid"
+#define CoIsInternal @"inter"
 
 @implementation PESGraphNode
 
 @synthesize identifier;
+
+-(instancetype)init {
+    self = [super init];
+    
+    if (self != nil) {
+        self.isInternal = NO;
+    }
+    
+    return self;
+}
 
 
 + (PESGraphNode *)nodeWithIdentifier:(NSString *)anIdentifier {
@@ -39,6 +50,7 @@
 }
 
 + (instancetype)nodeWithIdentifier:(NSString*)identifier lat:(double)lat lng:(double)lng floor:(NSString*)floorID immidiates:(NSArray*)immidiateNodes {
+    
     PESGraphNode *node = [[PESGraphNode alloc] init];
     
     node.identifier = identifier;
@@ -57,7 +69,8 @@
                               CoImmediateNodes: KZProperty(immediateNodes),
                               CoLatitude: KZProperty(latitude),
                               CoLongitude: KZProperty(longitude),
-                              CoFloorID: KZProperty(floorID)
+                              CoFloorID: KZProperty(floorID),
+                              CoIsInternal: KZProperty(isInternal)
                               };
     
     [KZPropertyMapper mapValuesFrom:object toInstance:self usingMapping:mapping];

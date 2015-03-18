@@ -383,7 +383,7 @@
     for (NSString *nodeIdentifier in self.nodes) {
         PESGraphNode *node = self.nodes[nodeIdentifier];
         
-        if (![node.floorID isEqualToString:floorID] && ![node.identifier hasSuffix:@"x"])
+        if (![node.floorID isEqualToString:floorID] && !node.isInternal)
             continue;
         
         CLLocationCoordinate2D nodeCoordinate = CLLocationCoordinate2DMake(node.latitude, node.longitude);
